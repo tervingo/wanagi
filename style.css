@@ -23,12 +23,12 @@ button { font: inherit; }
 .header-note { justify-self: center; color: var(--muted); }
 .header-link { justify-self: end; }
 .header-link span { color: var(--coral); font-size: 18px; margin-left: 7px; }
-.hero { min-height: 610px; position: relative; display: flex; align-items: center; padding: 84px 0 106px; }
-.hero-copy { max-width: 650px; position: relative; z-index: 1; }
+.hero { min-height: 680px; position: relative; display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(32px, 5vw, 76px); align-items: center; padding: 84px 0 106px; }
+.hero-copy { max-width: none; position: relative; z-index: 1; }
 .eyebrow { display: flex; align-items: center; gap: 13px; margin: 0 0 25px; color: var(--coral); font-size: 10px; letter-spacing: .2em; text-transform: uppercase; font-weight: 600; }
 .eyebrow span { width: 28px; height: 1px; background: currentColor; display: inline-block; }
 h1, h2 { font-family: var(--display); font-weight: 500; letter-spacing: -.055em; margin: 0; }
-h1 { font-size: clamp(76px, 11.2vw, 164px); line-height: .85; }
+h1 { font-size: clamp(68px, 8vw, 125px); line-height: .85; }
 h1 em, h2 em { color: var(--coral); font-style: italic; font-weight: 500; }
 .intro { max-width: 370px; margin: 44px 0 0 8px; color: var(--muted); font-size: 14px; line-height: 1.7; }
 .scroll-cue { display: flex; align-items: center; gap: 14px; margin: 58px 0 0 8px; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; }
@@ -37,6 +37,8 @@ h1 em, h2 em { color: var(--coral); font-style: italic; font-weight: 500; }
 .hero-mark span { font-family: var(--display); font-size: clamp(155px, 20vw, 290px); line-height: 1; color: transparent; -webkit-text-stroke: 1px rgba(23,59,53,.24); }
 .hero-mark i { position: absolute; width: 11px; height: 11px; background: var(--coral); border-radius: 50%; top: 18%; right: 8%; }
 .hero-mark small { position: absolute; right: -33px; bottom: 21%; color: var(--muted); font-size: 9px; line-height: 1.5; letter-spacing: .16em; text-transform: uppercase; transform: rotate(-12deg); }
+.hero .carousel { width: 100%; min-width: 0; }
+.hero .carousel-frame { aspect-ratio: 1.18 / 1; }
 .gallery-section { display: grid; grid-template-columns: 30% 1fr; gap: 8.5%; padding: 100px 0 145px; border-top: 1px solid var(--line); }
 .section-heading { padding-top: 25px; }
 .section-heading h2 { font-size: clamp(43px, 5vw, 72px); line-height: .93; max-width: 300px; }
@@ -68,12 +70,14 @@ h1 em, h2 em { color: var(--coral); font-style: italic; font-weight: 500; }
   .page-shell { padding: 0 22px; }
   .site-header { height: 76px; grid-template-columns: 1fr 1fr; }
   .header-note { display: none; }
-  .hero { min-height: 630px; padding: 70px 0; align-items: flex-start; }
-  h1 { font-size: clamp(70px, 21vw, 125px); margin-top: 15px; }
+  .hero { display: block; min-height: 0; padding: 70px 0 105px; }
+  h1 { font-size: clamp(58px, 17vw, 95px); margin-top: 15px; }
   .hero-mark { width: 245px; height: 245px; right: -42px; top: 280px; }
   .hero-mark span { font-size: 175px; }
   .intro { margin-top: 38px; max-width: 290px; }
   .scroll-cue { margin-top: 46px; }
+  .hero .carousel { margin-top: 64px; }
+  .hero .carousel-frame { aspect-ratio: .84 / 1; }
   .gallery-section { display: block; padding: 75px 0 105px; }
   .section-heading { padding-top: 0; margin-bottom: 48px; }
   .section-heading h2 { max-width: 270px; }

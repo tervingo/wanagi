@@ -3,12 +3,12 @@ const photos = [
   { file: '2_wmtm.JPG', alt: 'Los cuatro', caption: 'Los cuatro' },
   { file: '3_w&carmen.JPG', alt: 'Con Carmen', caption: 'Con Carmen' },
   { file: '4_w&guio.JPG', alt: 'Con Guio', caption: 'Con Guio' },
-  { file: '5_todos.JPG', alt: 'Todos juntos ', caption: 'Todos juntos ' },
+  { file: '5_todos.JPG', alt: 'Con Juan', caption: 'Con Juan' },
   { file: '6_w&felisa.JPG', alt: 'Con Felisa', caption: 'Con Felisa' },
   { file: '7_wm&tere.JPG', alt: 'Los tres', caption: 'Los tres' },
   { file: '8_w_villavelayo.JPG', alt: 'En Villavelayo', caption: 'En Villavelayo' },
-  { file: '9_w&diego.JPG', alt: 'Con Diego', caption: 'Con Diego' },
-  { file: '10_Wanagy_y_Tere.JPG', alt: 'Con Tere', caption: 'Con Tere' }
+  { file: '9_w&diego.JPG', alt: 'En La Villa', caption: 'En La Villa' },
+  { file: '10_Wanagi_y_Tere.JPG', alt: 'Con Tere', caption: 'Con Tere' }
 ];
 
 const slidesContainer = document.querySelector('.slides');
