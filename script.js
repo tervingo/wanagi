@@ -1,14 +1,14 @@
 const photos = [
-  { file: 'DSC00020.JPG', alt: 'Familia y amigos reunidos alrededor de una mesa', caption: 'Los primeros brindis' },
-  { file: 'DSC00027.JPG', alt: 'Recuerdo compartido entre amigos', caption: 'Días para recordar' },
-  { file: 'DSC01899.JPG', alt: 'Wanagi y sus seres queridos', caption: 'La gente que importa' },
-  { file: 'IMG_1455.JPG', alt: 'Un instante especial de celebración', caption: 'Instantes compartidos' },
-  { file: 'IMG_3251.JPG', alt: 'Una escena entrañable del álbum', caption: 'Todo lo vivido' },
-  { file: 'P1010050.JPG', alt: 'Un recuerdo familiar', caption: 'Con los de siempre' },
-  { file: 'P1010053.JPG', alt: 'Una celebración en buena compañía', caption: 'La celebración continúa' },
-  { file: 'P1020662.JPG', alt: 'Un momento espontáneo entre amigos', caption: 'Sin posar, siendo' },
-  { file: 'P1020843.JPG', alt: 'Una imagen luminosa de un recuerdo', caption: 'La luz de aquellos días' },
-  { file: 'P1020869.JPG', alt: 'Wanagi disfrutando de un momento especial', caption: 'Y todo lo que queda' }
+  { file: '1_de_pequeños.JPG', alt: 'De pequeños', caption: 'De pequeños' },
+  { file: '2_wmtm.JPG', alt: 'Los cuatro', caption: 'Los cuatro' },
+  { file: '3_w&carmen.JPG', alt: 'Con Carmen', caption: 'Con Carmen' },
+  { file: '4_w&guio.JPG', alt: 'Con Guio', caption: 'Con Guio' },
+  { file: '5_todos.JPG', alt: 'Todos juntos ', caption: 'Todos juntos ' },
+  { file: '6_w&felisa.JPG', alt: 'Con Felisa', caption: 'Con Felisa' },
+  { file: '7_wm&tere.JPG', alt: 'Los tres', caption: 'Los tres' },
+  { file: '8_w_villavelayo.JPG', alt: 'En Villavelayo', caption: 'En Villavelayo' },
+  { file: '9_w&diego.JPG', alt: 'Con Diego', caption: 'Con Diego' },
+  { file: '10_Wanagy_y_Tere.JPG', alt: 'Con Tere', caption: 'Con Tere' }
 ];
 
 const slidesContainer = document.querySelector('.slides');
