@@ -1,4 +1,25 @@
-const slides = [...document.querySelectorAll('.slide')];
+const photos = [
+  { file: 'DSC00020.JPG', alt: 'Familia y amigos reunidos alrededor de una mesa', caption: 'Los primeros brindis' },
+  { file: 'DSC00027.JPG', alt: 'Recuerdo compartido entre amigos', caption: 'Días para recordar' },
+  { file: 'DSC01899.JPG', alt: 'Wanagi y sus seres queridos', caption: 'La gente que importa' },
+  { file: 'IMG_1455.JPG', alt: 'Un instante especial de celebración', caption: 'Instantes compartidos' },
+  { file: 'IMG_3251.JPG', alt: 'Una escena entrañable del álbum', caption: 'Todo lo vivido' },
+  { file: 'P1010050.JPG', alt: 'Un recuerdo familiar', caption: 'Con los de siempre' },
+  { file: 'P1010053.JPG', alt: 'Una celebración en buena compañía', caption: 'La celebración continúa' },
+  { file: 'P1020662.JPG', alt: 'Un momento espontáneo entre amigos', caption: 'Sin posar, siendo' },
+  { file: 'P1020843.JPG', alt: 'Una imagen luminosa de un recuerdo', caption: 'La luz de aquellos días' },
+  { file: 'P1020869.JPG', alt: 'Wanagi disfrutando de un momento especial', caption: 'Y todo lo que queda' }
+];
+
+const slidesContainer = document.querySelector('.slides');
+slidesContainer.innerHTML = photos.map((photo, index) => `
+  <figure class="slide${index === 0 ? ' is-active' : ''}">
+    <img src="fotos/${photo.file}" alt="${photo.alt}" loading="${index === 0 ? 'eager' : 'lazy'}">
+    <figcaption><span>${String(index + 1).padStart(2, '0')}</span> ${photo.caption}</figcaption>
+  </figure>
+`).join('');
+
+const slides = [...slidesContainer.querySelectorAll('.slide')];
 const dotsContainer = document.querySelector('.dots');
 const counter = document.querySelector('.carousel-counter strong');
 const carousel = document.querySelector('.carousel');
